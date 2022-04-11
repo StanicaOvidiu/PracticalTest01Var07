@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PracticalTest01Var07MainActivity">
+
+    <EditText
+    android:id="@+id/up_left_edit_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:saveEnabled="false"
+    android:enabled="true"
+    android:inputType="number"
+    android:ems="7"
+    android:layout_alignParentLeft="true"
+    android:gravity="center" />
+ 
+    <EditText
+    android:id="@+id/up_right_edit_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:saveEnabled="false"
+    android:enabled="true"   
+    android:inputType="number"
+    android:ems="7"
+    android:layout_alignParentRight="true"
+    android:gravity="center" />
+ 
+    <EditText
+    android:id="@+id/down_left_edit_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:saveEnabled="false"
+    android:enabled="true"   
+    android:inputType="number"
+    android:ems="7"
+    android:layout_alignLeft="@id/up_left_edit_text"
+    android:layout_below="@id/up_left_edit_text"
+    android:layout_alignRight="@id/up_left_edit_text" />
+ 
+    <EditText
+    android:id="@+id/down_right_edit_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:saveEnabled="false"
+    android:enabled="true"   
+    android:inputType="number"
+    android:ems="7"
+    android:layout_alignLeft="@id/up_right_edit_text"
+    android:layout_below="@id/up_right_edit_text"
+    android:layout_alignRight="@id/up_right_edit_text" />
+
+   <Button
+    android:id="@+id/set_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true" />
+ 
+</RelativeLayout>
